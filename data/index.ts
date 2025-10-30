@@ -31,7 +31,7 @@ export const gridItems = [
   {
     id: 3,
     title: "FullStack Júnior",
-    description: "Estou sempre buscando evoluir e aprender novas tecnologias.",
+    description: "Aprendizado e melhoria contínua.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -50,7 +50,7 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Atualmente desenvolvendo uma biblioteca de animações em JavaScript.",
+    title: "Atualmente desenvolvendo um Saas com Next.js e TypeScript.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -124,21 +124,39 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "Hostinger",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 2,
     name: "Docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
   {
-    id: 3,
+    id: 2,
     name: "Supabase",
     img: "/supabase.svg",
     nameImg: "/supabaseName.svg",
+  },
+  {
+    id: 3,
+    name: "React",
+    img: "/react.svg",
+    nameImg: "/react.svg",
+  },
+    {
+    id: 4,
+    name: "Vercel",
+    img: "/vercel.svg",
+    nameImg: "/vercelName.svg",
+  },
+  {
+    id: 5,
+    name: "Next.js",
+    img: "/next.svg",
+    nameImg: "/next.svg",
+  },
+  {
+    id: 6,
+    name: "MongoDB",
+    img: "/mongodb.svg",
+    nameImg: "/mongodb.svg",
   },
 ] as const;
 
@@ -152,7 +170,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Desenvolvedor Mobile",
+    title: "Desenvolvedor Back-End Júnior",
     desc: "Criação de aplicativos multiplataforma com React Native e integração com APIs REST.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
@@ -160,7 +178,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Projetos Freelance",
-    desc: "Desenvolvimento completo de aplicações web e mobile para clientes locais e remotos.",
+    desc: "Desenvolvimento completo de aplicações web para clientes locais e remotos.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
@@ -172,7 +190,6 @@ export const workExperience = [
     thumbnail: "/exp4.svg",
   },
 ] as const;
-
 export const socialMedia = [
   {
     name: "GitHub",
