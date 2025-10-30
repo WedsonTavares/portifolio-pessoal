@@ -10,8 +10,8 @@ export const RecentProjects = () => {
   return (
     <section id="projects" className="py-20">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        Uma pequena seleção de{" "}
+        <span className="text-purple">projetos recentes</span>
       </h1>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
@@ -21,7 +21,7 @@ export const RecentProjects = () => {
               key={id}
               className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
             >
-              <PinContainer title="Visit" href={link}>
+              <PinContainer title="Visitar" href={link}>
                 <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
                   <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                     <Image
@@ -77,7 +77,7 @@ export const RecentProjects = () => {
                       rel="noreferrer noopener"
                       className="flex text-sm text-purple md:text-xs lg:text-xl"
                     >
-                      Source Code
+                      Ver Código
                     </Link>
 
                     <FaLocationArrow className="ms-3" color="#cbacf9" />

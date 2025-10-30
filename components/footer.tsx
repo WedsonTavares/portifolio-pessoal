@@ -54,11 +54,11 @@ export const Footer = () => {
             rel="noreferrer noopener"
             className="text-purple"
           >
-            Sanidhya
+            Wedson Tavares
           </Link>{" "}
           |{" "}
           <Link href={links.sourceCode} className="underline">
-            Source Code
+            Ver Código
           </Link>
         </p>
 
