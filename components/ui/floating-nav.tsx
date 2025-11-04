@@ -29,9 +29,9 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
         setVisible(true);
       } else {
         if (current > lastScrollY) {
-          setVisible(false); // Scrolling down
+          setVisible(false); // Rolando para baixo
         } else {
-          setVisible(true); // Scrolling up
+          setVisible(true); // Rolando para cima
         }
       }
       setLastScrollY(current);

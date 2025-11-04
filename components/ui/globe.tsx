@@ -138,7 +138,7 @@ export const Globe = ({ globeConfig, data }: WorldProps) => {
       });
     }
 
-    // remove duplicates for same lat and lng
+  // remove duplicatas para a mesma latitude e longitude
     const filteredPoints = points.filter(
       (v, i, a) =>
         a.findIndex((v2) =>

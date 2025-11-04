@@ -21,35 +21,53 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Pronto para levar <span className="text-purple">sua</span> marca digital no próximo nível?
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">
-          Reach out to me today and let&apos;s discuss how I can help your
-          achieve your goals.
+          Entre em contato comigo hoje e vamos discutir como posso ajudar a
+          alcançar seus objetivos.
         </p>
 
-        <Link
-          href={`mailto:${links.ownerEmail}`}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="md:mt-10"
-        >
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-            asChild
-          />
-        </Link>
+  {/* Se ownerWhatsApp estiver configurado, abrir WhatsApp; caso contrário, usar mailto como fallback */}
+        {(() => {
+          const wa = (links as any).ownerWhatsApp as string | undefined;
+          const waMsg = (links as any).ownerWhatsAppMessage as string | undefined;
+          let contactHref = `mailto:${links.ownerEmail}`;
+
+          if (wa && wa.length > 0) {
+            // se o usuário forneceu uma URL completa (startsWith http), usar como está
+            if (wa.startsWith("http")) {
+              contactHref = wa;
+            } else {
+              const encoded = waMsg ? `?text=${encodeURIComponent(waMsg)}` : "";
+              contactHref = `https://wa.me/${wa}${encoded}`;
+            }
+          }
+
+          return (
+            <Link
+              href={contactHref}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="md:mt-10"
+            >
+              <MagicButton
+                title="Entrar em Contato"
+                icon={<FaLocationArrow />}
+                position="right"
+                asChild
+              />
+            </Link>
+          );
+        })()}
       </div>
 
       <div className="relative z-[999] mt-16 flex flex-col items-center justify-between md:flex-row">
         <p className="text-sm font-light md:text-base md:font-normal">
           Copyright &copy; {new Date().getFullYear()}{" "}
           <Link
-            href="https://sanidhy.me"
+            href="https://github.com/WedsonTavares"
             target="_blank"
             rel="noreferrer noopener"
             className="text-purple"

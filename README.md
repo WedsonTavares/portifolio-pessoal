@@ -1,82 +1,129 @@
-# Modern & Minimalist Next.js Portfolio.
+# Meu Portifólio feito com Next.js — Moderno e Minimalista
 
-![Modern & Minimalist Next.js Portfolio.](/.github/images/img_main.png "Modern & Minimalist Next.js Portfolio.")
+Projeto de portfólio desenvolvido com Next.js 14, React 18, Tailwind CSS e animações (Framer Motion, efeitos 3D, etc.). Focado em performance, responsividade e uma experiência visual agradável.
 
-[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://img.shields.io/github/license/sanidhyy/next-portfolio)](https://github.com/sanidhyy/next-portfolio/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sanidhyy/next-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://badgen.net/github/branches/sanidhyy/next-portfolio)](https://github.com/sanidhyy/next-portfolio/branches "GitHub branches")
-[![Github commits](https://badgen.net/github/commits/sanidhyy/next-portfolio/main)](https://github.com/sanidhyy/next-portfolio/commits "Github commits")
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c26959a9-0124-4f3c-87ac-0cd3e6de5ab4/deploy-status)](https://portfolionext-js.netlify.app/ "Netlify Status")
-[![GitHub issues](https://img.shields.io/github/issues/sanidhyy/next-portfolio)](https://github.com/sanidhyy/next-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/sanidhyy/next-portfolio)](https://github.com/sanidhyy/next-portfolio/pulls "GitHub pull requests")
+<p align="center">
+  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Ver%20Demonstra%C3%A7%C3%A3o-915EFF?style=for-the-badge" alt="Ver Demonstração" />
+  </a>
+  &nbsp;
+  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Visitar%20Site-0EA5E9?style=for-the-badge" alt="Visitar Site" />
+  </a>
+</p>
+# Meu Portifólio feito com Next.js — Moderno e Minimalista
 
-## ⚠️ Before you start
+Projeto de portfólio desenvolvido com Next.js 14, React 18, Tailwind CSS e animações (Framer Motion, efeitos 3D, etc.). Focado em performance, responsividade e uma experiência visual agradável.
 
-1. Make sure **Git** and **NodeJS** is installed.
-2. Clone this repository to your local computer.
-3. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
-4. Now app is fully configured :+1: and you can start using this app using `npm run dev` or `yarn dev`.
+## Recursos
 
-## :camera: Screenshots:
+- App Router (Next.js 14)
+- Tailwind CSS com utilitários e animações
+- Efeitos 3D/Canvas (three, react-three-fiber, three-globe)
+- Componentes reutilizáveis (bento grid, cards, botões, navegação flutuante)
+- Dados centralizados em `data/index.ts`
+- Suporte a contato via WhatsApp no rodapé (configurável em `config/index.ts`)
+- Export estático para GitHub Pages (workflow incluso)
 
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
+## Stack
 
-![Project Showcase](/.github/images/img2.png "Project Showcase")
+- Next.js 14, React 18, TypeScript
+- Tailwind CSS, tailwind-merge, tailwindcss-animate
+- Framer Motion
+- three, @react-three/fiber, @react-three/drei, three-globe
+- next-themes, react-icons
 
-![Work Experience](/.github/images/img3.png "Work Experience")
+## Estrutura
 
-![Build with Tailwind CSS](/.github/images/img4.png "Build with Tailwind CSS")
+- `app/` — páginas (App Router: `layout.tsx`, `page.tsx`)
+- `components/` — componentes de UI e seções (Hero, Grid, Projetos, Experiência, Footer)
+- `components/ui/` — componentes utilitários (nav flutuante, efeitos, etc.)
+- `config/` — configurações do site e links (`config/index.ts`)
+- `data/` — conteúdo estático: `navItems`, `gridItems`, `projects`, `testimonials`, `companies`, `techStack`
+- `public/` — imagens e ícones
 
-## :gear: Built with
+## Como rodar localmente
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![Three JS](https://skillicons.dev/icons?i=threejs "Three JS")](https://threejs.org/ "Three JS") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
+1) Requisitos: Node.js 18+ e npm
 
-## :wrench: Stats
+2) Instalar dependências:
 
-[![Stats for this App](/.github/images/stats.svg "Stats for this App")](https://pagespeed.web.dev/analysis?url=https://portfolionext-js.netlify.app/ "Stats for this App")
+```bash
+npm install
+```
 
-## :raised_hands: Contribute
+3) Rodar o servidor de desenvolvimento:
 
-You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+```bash
+npm run dev
+```
 
-## :coffee: Buy Me a Coffee
+4) Build de produção (Next.js):
 
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
+```bash
+npm run build
+```
 
-## :rocket: Follow Me
+5) Export estático (usado para GitHub Pages):
 
-[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https://github.com/sanidhyy/next-portfolio "Tweet")
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@OPGAMER. "Subscribe my Channel")
+```bash
+npm run build
+```
 
-## :books: Learn More
+Com `output: "export"` no `next.config.mjs`, o build já gera a pasta `out/` com os arquivos estáticos.
 
-To learn more about Next.js, take a look at the following resources:
+## Onde editar conteúdo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Ícones/tecnologias abaixo do título “Stack de Tecnologias”: editar `companies` em `data/index.ts`.
+  - Para cada item: `{ id, name, img, nameImg }` — atualmente o componente usa apenas `img`.
+  - Coloque o arquivo de ícone dentro de `public/` e referencie como `"/meu-icone.svg"`.
+- Projetos e seus ícones: `projects[].iconLists` em `data/index.ts`.
+- WhatsApp do rodapé: `config/index.ts` → `ownerWhatsApp` (número internacional sem `+` e espaços, ex.: `5511999999999`).
+  - Mensagem padrão: `ownerWhatsAppMessage`.
+- Itens de navegação, textos dos grids e experiência: `data/index.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy
 
-## :page_with_curl: Deploy on Netlify
+### Vercel (recomendado)
 
-The simplest way to deploy your React.js app is to use the [Netlify Platform](https://app.netlify.com/start) - a powerful platform for modern web projects.
+1) Faça login na Vercel e importe o repositório.
+2) Use as configurações padrão. A Vercel detecta Next.js automaticamente.
+3) Após o deploy, o site ficará disponível no domínio fornecido pela Vercel.
 
-Explore the [Netlify deployment documentation](https://docs.netlify.com/site-deploys/create-deploys) for step-by-step instructions on deploying your React.js app on Netlify.
+### GitHub Pages (export estático)
 
-Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto já está configurado para export estático e deploy automático via GitHub Actions:
 
-## :star: Give A Star
+- `next.config.mjs` define `output: 'export'`, `images.unoptimized: true` e configura `basePath/assetPrefix` quando `GITHUB_PAGES=true`.
+- Workflow em `.github/workflows/deploy.yml` faz o build estático (gera `out/`) e publica no branch `gh-pages`.
 
-You can also give this repository a star to show more people and they can use this repository.
+Passos:
 
-## :star2: Star History
+1) No GitHub, em Settings → Pages, selecione a fonte `Deploy from a branch` e `gh-pages` (raiz `/`).
+2) Faça um push para `main`. O workflow irá:
+   - Instalar deps (`npm ci`)
+  - Executar `npm run build` com `GITHUB_PAGES=true`
+   - Publicar `out/` em `gh-pages`
+3) Acesse: `https://<seu-usuario>.github.io/<nome-do-repo>/`
 
-<a href="https://star-history.com/#sanidhyy/next-portfolio&Timeline">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/next-portfolio&type=Timeline&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/next-portfolio&type=Timeline" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/next-portfolio&type=Timeline" />
-  </picture>
-</a>
+Observação: Se o repositório for o do usuário (ex.: `wedson.github.io`), não é necessário `basePath`. O workflow continuará funcionando; o site aparecerá em `https://<seu-usuario>.github.io/`.
+
+## Notas e dicas
+
+- Use SVGs sempre que possível para ícones (mais leves e escaláveis).
+- Mantenha `id` únicos em `companies`.
+- Caso adicione imagens externas, configure domínios em `next.config.mjs` (se não usar export estático) — para export estático, prefira assets em `public/`.
+
+<p align="center">
+  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Ver%20Demonstra%C3%A7%C3%A3o-915EFF?style=for-the-badge" alt="Ver Demonstração" />
+  </a>
+  &nbsp;
+  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Visitar%20Site-0EA5E9?style=for-the-badge" alt="Visitar Site" />
+  </a>
+</p>
+
+## Licença
+
+Este repositório é de uso pessoal de `Wedson Tavares`. Se desejar utilizar como base, mantenha os créditos e revise as dependências antes do uso em produção.

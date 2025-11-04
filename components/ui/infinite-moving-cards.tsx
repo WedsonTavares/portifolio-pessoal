@@ -69,6 +69,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
+    // Desabilita a regra do ESLint para dependências do useEffect de forma intencional
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

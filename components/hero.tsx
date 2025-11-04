@@ -37,7 +37,7 @@ export const Hero = () => {
           />
 
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Olá, Eu sou {links.ownerName}, um desenvolvedor FullStack Júnior.
+            Olá, Eu sou {links.ownerName}, desenvolvedor FullStack Júnior.
           </p>
 
           <Link href="#about" className="md:mt-10">

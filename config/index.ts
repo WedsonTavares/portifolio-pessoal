@@ -4,6 +4,9 @@ export const links = {
   sourceCode: "https://github.com/WedsonTavares/portifolio-pessoal.git",
   ownerName: "Wedson Tavares",
   ownerEmail: "wedsonsobral@gmail.com",
+  ownerWhatsApp: "5516992331680",
+  // Mensagem padrão opcional para pré-preencher ao abrir o WhatsApp.
+  ownerWhatsAppMessage: "Olá, gostaria de conversar sobre um projeto.",
 } as const;
 
 export const siteConfig: Metadata = {
