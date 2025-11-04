@@ -11,7 +11,7 @@ export const links = {
 } as const;
 
 export const siteConfig: Metadata = {
-  title: `${links.ownerName}'s Portfolio`,
+  title: `${links.ownerName} Portifólio`,
   description: " Portfolio Moderno e Minimalista feito com Next.js .",
   keywords: [
     "reactjs",
@@ -58,7 +58,7 @@ export const siteConfig: Metadata = {
     "https://WedsonTavares.github.io/portifolio-pessoal"
   ),
   openGraph: {
-    title: `${links.ownerName} - Portfolio`,
+    title: `${links.ownerName} Portifólio`,
     description: "Modern & Minimalist Next.js Portfolio.",
     url: "https://WedsonTavares.github.io/portifolio-pessoal",
     siteName: `${links.ownerName}`,
@@ -67,14 +67,14 @@ export const siteConfig: Metadata = {
         url: new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString(),
         width: 1200,
         height: 630,
-        alt: `${links.ownerName} — Portfolio`,
+        alt: `${links.ownerName} — Portifólio`,
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${links.ownerName} - Portfolio`,
+    title: `${links.ownerName} Portifólio`,
     description: "Modern & Minimalist Next.js Portfolio.",
     images: [new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString()],
   },

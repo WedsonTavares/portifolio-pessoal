@@ -1,9 +1,0 @@
-<!-- Placeholder Supabase name graphic -->
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="80" viewBox="0 0 360 80" role="img" aria-label="Supabase name">
-  <rect width="360" height="80" rx="12" fill="#ffffff" stroke="#e6f5ee"/>
-  <g transform="translate(16,48)">
-    <rect x="0" y="-36" width="56" height="56" rx="10" fill="#3ECF8E"/>
-    <text x="28" y="-4" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" text-anchor="middle">S</text>
-    <text x="84" y="6" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="24">Supabase</text>
-  </g>
-</svg>
