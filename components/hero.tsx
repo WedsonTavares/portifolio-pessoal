@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaDownload } from "react-icons/fa6";
+import { withBasePath } from "@/lib/utils";
 
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
@@ -40,14 +41,31 @@ export const Hero = () => {
             Olá, Eu sou {links.ownerName}, desenvolvedor FullStack Júnior.
           </p>
 
-          <Link href="#about" className="md:mt-10">
-            <MagicButton
-              title="Veja meu trabalho"
-              icon={<FaLocationArrow />}
-              position="right"
-              asChild
-            />
-          </Link>
+          <div className="md:mt-10 flex w-full flex-col items-center gap-3 md:flex-row md:justify-center">
+            <Link href="#about" className="w-full md:w-auto">
+              <MagicButton
+                title="Veja meu trabalho"
+                icon={<FaLocationArrow />}
+                position="right"
+                asChild
+              />
+            </Link>
+
+            <a
+              href={withBasePath(links.cvUrl ?? "/cv.pdf")}
+              download
+              className="w-full md:w-auto"
+              aria-label="Baixar CV"
+            >
+              <MagicButton
+                title="Baixar CV"
+                icon={<FaDownload />}
+                position="left"
+                asChild
+                otherClasses="bg-slate-900"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
