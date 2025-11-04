@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import { testimonials } from "@/data";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 export const InfiniteMovingCards = ({
   items,
@@ -113,7 +113,7 @@ export const InfiniteMovingCards = ({
                   <Image
                     height={50}
                     width={50}
-                    src="/profile.svg"
+                    src={withBasePath("/profile.svg")}
                     alt="profile"
                   />
                 </div>
