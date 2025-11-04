@@ -1,113 +1,146 @@
-# Meu Portifólio feito com Next.js — Moderno e Minimalista
+💻 Meu Portfólio — Moderno e Minimalista com Next.js
 
-Projeto de portfólio desenvolvido com Next.js 14, React 18, Tailwind CSS e animações (Framer Motion, efeitos 3D, etc.). Focado em performance, responsividade e uma experiência visual agradável.
+Portfólio pessoal desenvolvido com Next.js 14, React 18 e Tailwind CSS, com animações via Framer Motion e efeitos 3D (Three.js).
+Focado em performance, responsividade e experiência visual fluida.
 
-<p align="center">
-  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Visitar%20Portf%C3%B3lio-915EFF?style=for-the-badge" alt="Visitar Portfólio" />
-  </a>
-</p>
-## Recursos
+<p align="center"> <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer"> <img src="https://img.shields.io/badge/🌐%20Visitar%20Portfólio-915EFF?style=for-the-badge" alt="Visitar Portfólio" /> </a> <br/> <a href="https://github.com/WedsonTavares" target="_blank" rel="noopener noreferrer"> <img src="https://img.shields.io/badge/GitHub-WedsonTavares-black?style=for-the-badge&logo=github" alt="GitHub" /> </a> </p>
+✨ Recursos Principais
 
-- App Router (Next.js 14)
-- Tailwind CSS com utilitários e animações
-- Efeitos 3D/Canvas (three, react-three-fiber, three-globe)
-- Componentes reutilizáveis (bento grid, cards, botões, navegação flutuante)
-- Dados centralizados em `data/index.ts`
-- Suporte a contato via WhatsApp no rodapé (configurável em `config/index.ts`)
-- Export estático para GitHub Pages (workflow incluso)
+🚀 App Router (Next.js 14)
 
-## Stack
+🎨 Tailwind CSS com animações utilitárias
 
-- Next.js 14, React 18, TypeScript
-- Tailwind CSS, tailwind-merge, tailwindcss-animate
-- Framer Motion
-- three, @react-three/fiber, @react-three/drei, three-globe
-- next-themes, react-icons
+🌌 Efeitos 3D e Canvas com three, @react-three/fiber e three-globe
 
-## Estrutura
+🧩 Componentes reutilizáveis (Bento Grid, Cards, Botões, Navegação flutuante)
 
-- `app/` — páginas (App Router: `layout.tsx`, `page.tsx`)
-- `components/` — componentes de UI e seções (Hero, Grid, Projetos, Experiência, Footer)
-- `components/ui/` — componentes utilitários (nav flutuante, efeitos, etc.)
-- `config/` — configurações do site e links (`config/index.ts`)
-- `data/` — conteúdo estático: `navItems`, `gridItems`, `projects`, `testimonials`, `companies`, `techStack`
-- `public/` — imagens e ícones
+📦 Dados centralizados em data/index.ts
 
-## Como rodar localmente
+💬 Contato via WhatsApp configurável (config/index.ts)
 
-1) Requisitos: Node.js 18+ e npm
+🧱 Export estático pronto para GitHub Pages (workflow incluído)
 
-2) Instalar dependências:
+⚙️ Stack Tecnológica
 
-```bash
+Next.js 14, React 18, TypeScript
+
+Tailwind CSS, tailwind-merge, tailwindcss-animate
+
+Framer Motion
+
+three, @react-three/fiber, @react-three/drei, three-globe
+
+next-themes, react-icons
+
+🗂️ Estrutura do Projeto
+app/           → Páginas (App Router: layout.tsx, page.tsx)
+components/    → Componentes de UI e seções (Hero, Grid, Projetos, Experiência, Footer)
+components/ui/ → Componentes utilitários (nav flutuante, efeitos, etc.)
+config/        → Configurações e links globais (config/index.ts)
+data/          → Conteúdo estático (navItems, projects, techStack, etc.)
+public/        → Imagens e ícones
+
+🧠 Como Rodar Localmente
+
+Pré-requisitos: Node.js 18+ e npm
+
+Instale as dependências:
+
 npm install
-```
 
-3) Rodar o servidor de desenvolvimento:
 
-```bash
+Inicie o servidor de desenvolvimento:
+
 npm run dev
-```
 
-4) Build de produção (Next.js):
 
-```bash
+Crie o build de produção:
+
 npm run build
-```
 
-5) Export estático (usado para GitHub Pages):
 
-```bash
+Gere o export estático (para GitHub Pages):
+
 npm run build
-```
 
-Com `output: "export"` no `next.config.mjs`, o build já gera a pasta `out/` com os arquivos estáticos.
 
-## Onde editar conteúdo
+O next.config.mjs já possui output: "export", gerando a pasta out/ pronta para publicação.
 
-- Ícones/tecnologias abaixo do título “Stack de Tecnologias”: editar `companies` em `data/index.ts`.
-  - Para cada item: `{ id, name, img, nameImg }` — atualmente o componente usa apenas `img`.
-  - Coloque o arquivo de ícone dentro de `public/` e referencie como `"/meu-icone.svg"`.
-- Projetos e seus ícones: `projects[].iconLists` em `data/index.ts`.
-- WhatsApp do rodapé: `config/index.ts` → `ownerWhatsApp` (número internacional sem `+` e espaços, ex.: `5511999999999`).
-  - Mensagem padrão: `ownerWhatsAppMessage`.
-- Itens de navegação, textos dos grids e experiência: `data/index.ts`.
+🧩 Onde Editar o Conteúdo
 
-## Deploy
+Ícones / Tecnologias: editar companies em data/index.ts
 
-### Vercel (recomendado)
+Estrutura: { id, name, img, nameImg }
 
-1) Faça login na Vercel e importe o repositório.
-2) Use as configurações padrão. A Vercel detecta Next.js automaticamente.
-3) Após o deploy, o site ficará disponível no domínio fornecido pela Vercel.
+Coloque os SVGs em public/ e referencie como "/icone.svg"
 
-### GitHub Pages (export estático)
+Projetos e ícones: projects[].iconLists em data/index.ts
 
-Este projeto já está configurado para export estático e deploy automático via GitHub Actions:
+WhatsApp (rodapé): config/index.ts → ownerWhatsApp
 
-- `next.config.mjs` define `output: 'export'`, `images.unoptimized: true` e configura `basePath/assetPrefix` quando `GITHUB_PAGES=true`.
-- Workflow em `.github/workflows/deploy.yml` faz o build estático (gera `out/`) e publica no branch `gh-pages`.
+Formato: 5516999999999 (sem +, espaços ou traços)
+
+Mensagem padrão: ownerWhatsAppMessage
+
+Textos, navegação e grids: data/index.ts
+
+🚀 Deploy
+✅ Vercel (Recomendado)
+
+Faça login na Vercel e importe este repositório.
+
+Use as configurações padrão (detecção automática do Next.js).
+
+Após o deploy, o site ficará disponível em um domínio da Vercel.
+
+🧱 GitHub Pages (Export Estático)
+
+O projeto já vem configurado para deploy automático via GitHub Actions:
+
+next.config.mjs:
+
+output: 'export'
+
+images.unoptimized: true
+
+Configura basePath/assetPrefix se GITHUB_PAGES=true
+
+Workflow: .github/workflows/deploy.yml
 
 Passos:
 
-1) No GitHub, em Settings → Pages, selecione a fonte `Deploy from a branch` e `gh-pages` (raiz `/`).
-2) Faça um push para `main`. O workflow irá:
-   - Instalar deps (`npm ci`)
-  - Executar `npm run build` com `GITHUB_PAGES=true`
-   - Publicar `out/` em `gh-pages`
-3) Acesse: `https://<seu-usuario>.github.io/<nome-do-repo>/`
+Em Settings → Pages, defina:
 
-Observação: Se o repositório for o do usuário (ex.: `wedson.github.io`), não é necessário `basePath`. O workflow continuará funcionando; o site aparecerá em `https://<seu-usuario>.github.io/`.
+Source: Deploy from a branch
 
-## Notas e dicas
+Branch: gh-pages (pasta /)
 
-- Use SVGs sempre que possível para ícones (mais leves e escaláveis).
-- Mantenha `id` únicos em `companies`.
-- Caso adicione imagens externas, configure domínios em `next.config.mjs` (se não usar export estático) — para export estático, prefira assets em `public/`.
+Faça push para main. O workflow executará:
+
+npm ci
+
+npm run build com GITHUB_PAGES=true
+
+Publicará out/ em gh-pages
+
+Acesse:
+
+https://<usuario>.github.io/<nome-do-repo>/
 
 
+Se for um repositório de usuário (ex.: wedson.github.io), não precisa basePath.
 
-## Licença
+💡 Dicas
 
-Este repositório é de uso pessoal de `Wedson Tavares`. Se desejar utilizar como base, mantenha os créditos e revise as dependências antes do uso em produção.
+Prefira SVGs para ícones (leves e escaláveis)
+
+Garanta id únicos em companies
+
+Se usar imagens externas (sem export estático), adicione domínios em next.config.mjs
+
+Para export estático, sempre use assets locais em public/
+
+🧾 Licença
+
+Este repositório é de uso pessoal de Wedson Tavares.
+Você pode utilizá-lo como base mantendo os créditos e revisando as dependências antes de uso em produção.
