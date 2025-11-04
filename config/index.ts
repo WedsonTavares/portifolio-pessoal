@@ -12,7 +12,7 @@ export const links = {
 
 export const siteConfig: Metadata = {
   title: `${links.ownerName} Portifólio`,
-  description: " Portfolio Moderno e Minimalista feito com Next.js .",
+  description: "Portfólio Moderno e Minimalista desenvolvido com Next.js, React e TypeScript.",
   keywords: [
     "reactjs",
     "nextjs",
@@ -25,15 +25,15 @@ export const siteConfig: Metadata = {
     "radix-ui",
     "cn",
     "clsx",
-    "modern-portfolio",
+    "portifolio-moderno",
     "portfolio",
-    "3d-portfolio",
-    "animated-portfolio",
+    "portifolio-3d",
+    "portifolio-animado",
     "nextjs-portfolio",
     "react-portfolio",
     "react-three-fiber",
     "three.js",
-    "animated-website",
+    "website-animado",
     "framer",
     "framer-motion",
     "three",
@@ -52,36 +52,43 @@ export const siteConfig: Metadata = {
     "eslint",
     "html",
     "css",
+    "desenvolvedor-fullstack",
+    "desenvolvedor-frontend",
+    "desenvolvedor-backend",
   ] as Array<string>,
   // Base URL onde o site será publicado (usado para gerar URLs absolutas em Open Graph/Twitter)
   metadataBase: new URL(
     "https://WedsonTavares.github.io/portifolio-pessoal"
   ),
   openGraph: {
-    title: `${links.ownerName} Portifólio`,
-    description: "Modern & Minimalist Next.js Portfolio.",
+    title: `${links.ownerName} — Desenvolvedor Full Stack`,
+    description: "Portfólio moderno e minimalista com projetos em React, Next.js, TypeScript e mais.",
     url: "https://WedsonTavares.github.io/portifolio-pessoal",
-    siteName: `${links.ownerName}`,
+    siteName: `${links.ownerName} Portifólio`,
     images: [
       {
         url: new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString(),
         width: 1200,
         height: 630,
-        alt: `${links.ownerName} — Portifólio`,
+        alt: `${links.ownerName} — Desenvolvedor Full Stack`,
       },
     ],
+    locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${links.ownerName} Portifólio`,
-    description: "Modern & Minimalist Next.js Portfolio.",
+    title: `${links.ownerName} — Desenvolvedor Full Stack`,
+    description: "Portfólio moderno e minimalista com projetos em React, Next.js, TypeScript e mais.",
     images: [new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString()],
   },
   icons: {
-    icon: "/profile.svg",
-    shortcut: "/profile.svg",
-    apple: "/profile.svg",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/dev.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/dev.png",
   },
   authors: {
     name: links.ownerName,
