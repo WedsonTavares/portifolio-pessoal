@@ -60,9 +60,8 @@ export const Hero = () => {
               <MagicButton
                 title="Baixar CV"
                 icon={<FaDownload />}
-                position="left"
+                position="right"
                 asChild
-                otherClasses="bg-slate-900"
               />
             </a>
           </div>
