@@ -4,17 +4,9 @@ Projeto de portfólio desenvolvido com Next.js 14, React 18, Tailwind CSS e anim
 
 <p align="center">
   <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Ver%20Demonstra%C3%A7%C3%A3o-915EFF?style=for-the-badge" alt="Ver Demonstração" />
-  </a>
-  &nbsp;
-  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Visitar%20Site-0EA5E9?style=for-the-badge" alt="Visitar Site" />
+    <img src="https://img.shields.io/badge/Visitar%20Portf%C3%B3lio-915EFF?style=for-the-badge" alt="Visitar Portfólio" />
   </a>
 </p>
-# Meu Portifólio feito com Next.js — Moderno e Minimalista
-
-Projeto de portfólio desenvolvido com Next.js 14, React 18, Tailwind CSS e animações (Framer Motion, efeitos 3D, etc.). Focado em performance, responsividade e uma experiência visual agradável.
-
 ## Recursos
 
 - App Router (Next.js 14)
@@ -114,15 +106,7 @@ Observação: Se o repositório for o do usuário (ex.: `wedson.github.io`), nã
 - Mantenha `id` únicos em `companies`.
 - Caso adicione imagens externas, configure domínios em `next.config.mjs` (se não usar export estático) — para export estático, prefira assets em `public/`.
 
-<p align="center">
-  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Ver%20Demonstra%C3%A7%C3%A3o-915EFF?style=for-the-badge" alt="Ver Demonstração" />
-  </a>
-  &nbsp;
-  <a href="https://WedsonTavares.github.io/portifolio-pessoal/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Visitar%20Site-0EA5E9?style=for-the-badge" alt="Visitar Site" />
-  </a>
-</p>
+
 
 ## Licença
 
