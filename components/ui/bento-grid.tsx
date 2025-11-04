@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 
 import { links } from "@/config";
 import { techStack } from "@/data";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { MagicButton } from "./magic-button";
@@ -91,7 +91,7 @@ export const BentoGridItem = ({
             <Image
               width={689}
               height={541}
-              src={img}
+              src={withBasePath(img)}
               alt={img}
               className={cn("object-cover object-center", imgClassName)}
             />
@@ -108,7 +108,7 @@ export const BentoGridItem = ({
             <Image
               width={208}
               height={96}
-              src={spareImg}
+              src={withBasePath(spareImg)}
               alt={spareImg}
               className="h-full w-full object-cover object-center"
             />

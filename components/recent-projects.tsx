@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
+import { withBasePath } from "@/lib/utils";
 
 import { PinContainer } from "./ui/3d-pin";
 
@@ -27,7 +28,7 @@ export const RecentProjects = () => {
                     <Image
                       height={330}
                       width={552}
-                      src="/bg.png"
+                      src={withBasePath("/bg.png")}
                       alt="bg-img"
                     />
                   </div>
@@ -35,7 +36,7 @@ export const RecentProjects = () => {
                   <Image
                     height={300}
                     width={464}
-                    src={img}
+                    src={withBasePath(img)}
                     alt={title}
                     className="absolute bottom-0 z-10"
                   />
@@ -62,7 +63,7 @@ export const RecentProjects = () => {
                         <Image
                           height={40}
                           width={40}
-                          src={icon}
+                          src={withBasePath(icon)}
                           alt={icon}
                           className="p-2"
                         />

@@ -5,13 +5,14 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { MagicButton } from "@/components/ui/magic-button";
 import { links } from "@/config";
 import { socialMedia } from "@/data";
+import { withBasePath } from "@/lib/utils";
 
 export const Footer = () => {
   return (
     <footer id="contact" className="mb-[100px] w-full pb-10 md:mb-auto">
       <div className="absolute -bottom-72 left-0 min-h-96 w-full">
         <Image
-          src="/footer-grid.svg"
+          src={withBasePath("/footer-grid.svg")}
           alt="grid"
           className="h-full w-full opacity-50"
           width={1260}
@@ -91,7 +92,7 @@ export const Footer = () => {
               title={profile.name}
             >
               <Image
-                src={profile.img}
+                src={withBasePath(profile.img)}
                 alt={`profile-${profile.name}`}
                 width={20}
                 height={20}

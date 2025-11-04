@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { companies } from "@/data";
+import { withBasePath } from "@/lib/utils";
 
 export const Clients = () => {
   return (
@@ -20,7 +21,7 @@ export const Clients = () => {
               <Image
                 height={48}
                 width={48}
-                src={img}
+                src={withBasePath(img)}
                 alt={`${name} logo`}
                 className="w-8 h-8 md:w-12 md:h-12"
               />
