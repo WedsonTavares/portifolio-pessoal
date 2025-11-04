@@ -5,7 +5,7 @@ import { withBasePath } from "@/lib/utils";
 
 export const Clients = () => {
   return (
-    <section id="testimonials" className="py-20">
+    <section className="py-20">
       <h1 className="heading mb-8">
         Stack de  <span className="text-purple">Tecnoloagias</span>
       </h1>
