@@ -69,30 +69,40 @@ export const gridItems = [
 ] as const;
 
 export const projects = [
+
   {
     id: 1,
-    title: "ClouDence - landing Page para uma empresa de desenvolvimento de software.",
-    des: "Página de demonstração totalmente responsiva para uma empresa de software (CodeVance). Desenvolvida com Next.js, React, Tailwind CSS e algumas bibliotecas auxiliares (AOS, react-icons, next-themes).",
-    img: "/cloudence.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://cloudence.netlify.app/",
-    sourceCode: "https://github.com/WedsonTavares/cloudence",
+    title: "AdminHub - Sistema FullStack para controle de produtos e clientes.",
+    des: "Sistema para controle de produtos, vendas, estoque e clientes.",
+    img: "/projects/adminhub.png",
+    iconLists: [
+      "/next.svg",
+      "/react.svg",
+      "/tail.svg",
+      "/supabase.svg",
+      "/fm.svg",
+      "/ts.svg",
+      "/node.svg",
+      "/supabase.svg",
+    ],
+    link: "https://github.com/WedsonTavares/dashboard-saas",
+    sourceCode: "https://github.com/WedsonTavares/dashboard-saas",
   },
   {
     id: 2,
-    title: "Interiores - LandingPage",
-    des: "Landing Page moderna e animada, UX aprimorada para loja de móveis Planejados.",
-    img: "/interiores.png",
-    iconLists: ["/next.svg", "/tail.svg", "/js.png"],
-    link: "https://leafy-salamander-302e1a.netlify.app/",
-    sourceCode: "https://github.com/WedsonTavares/interiores",
+    title: "ClouDence - Landing Page para uma empresa de desenvolvimento de software.",
+    des: "Página de demonstração totalmente responsiva para uma empresa de software (CodeVance). Desenvolvida com Next.js, React, Tailwind CSS e algumas bibliotecas auxiliares (AOS, react-icons, next-themes).",
+    img: "/projects/cloudence.png",
+    iconLists: ["/re.svg", "/tail.svg", "/fm.svg", "/ts.svg"],
+    link: "https://cloudence.netlify.app/",
+    sourceCode: "https://github.com/WedsonTavares/cloudence",
   },
   {
     id: 3,
     title: "Landing Page - Vidrocar.",
     des: "Landing Page moderna e animada, UX aprimorada para loja de lavagem de carros.",
-    img: "/vidrocar.png",
-    iconLists: ["/react.svg", "/tail.svg", "/ts.svg",],
+    img: "/projects/vidrocar.png",
+    iconLists: ["/react.svg", "/tail.svg", "/fm.svg", "/ts.svg",],
     link: "https://www.vidrocartga.com.br/",
     sourceCode: "https://github.com/WedsonTavares",
   },
@@ -100,10 +110,28 @@ export const projects = [
     id: 4,
     title: "FullStack - WebSite Portfólio.",
     des: "Website Portfólio moderno e responsivo para apresentar habilidades e projetos.",
-    img: "/dev.png",
-    iconLists: ["/next.svg", "/tail.svg", "/js.png", "/react.svg", "/cloud.svg", "/emailjs.png", "/mongodb.svg"],
+    img: "/projects/dev.png",
+    iconLists: ["/next.svg", "/tail.svg", "/js.svg", "/react.svg", "/fm.svg", "/cloud.svg", "/emailjs.png", "/mongodb.svg"],
     link: "https://tavaresdev.com/",
     sourceCode: "https://github.com/WedsonTavares/fullstack",
+  },
+  {
+    id: 5,
+    title: "Interiores - LandingPage",
+    des: "Landing Page moderna e animada, UX aprimorada para loja de móveis Planejados.",
+    img: "/projects/interiores.png",
+    iconLists: ["/next.svg", "/tail.svg", "/fm.svg", "/js.svg"],
+    link: "https://leafy-salamander-302e1a.netlify.app/",
+    sourceCode: "https://github.com/WedsonTavares/interiores",
+  },
+  {
+    id: 5,
+    title: "BarberShop - LandingPage",
+    des: "Landing Page moderna e animada, UX aprimorada para barbearias.",
+    img: "/projects/barber.png",
+    iconLists: ["/next.svg", "/tail.svg", "/fm.svg", "/js.svg"],
+    link: "https://wedsontavares.github.io/landin-barber/",
+    sourceCode: "https://github.com/WedsonTavares/landin-barber",
   },
 ] as const;
 
@@ -163,31 +191,31 @@ export const companies = [
     img: "/ts.svg",
     nameImg: "/tsName.svg",
   },
-    {
+  {
     id: 10,
     name: "JavaScript",
-    img: "/js.png",
+    img: "/js.svg",
     nameImg: "/jsName.svg",
   },
-     {
+  {
     id: 11,
     name: "tailwindCSS",
     img: "/tail.svg",
     nameImg: "/tailName.svg",
   },
-     {
+  {
     id: 12,
     name: "Mui",
     img: "/material-ui.svg",
     nameImg: "/muiName.svg",
   },
-    {
+  {
     id: 8,
     name: "Github",
     img: "/git.svg",
     nameImg: "/gitName.svg",
   },
-    {
+  {
     id: 9,
     name: "Git",
     img: "/git1.svg",

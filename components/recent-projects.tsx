@@ -1,13 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useState } from "react";
 
 import { projects } from "@/data";
 import { withBasePath } from "@/lib/utils";
 
 import { PinContainer } from "./ui/3d-pin";
+import { MagicButton } from "./ui/magic-button";
 
 export const RecentProjects = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section id="projects" className="py-20">
       <h1 className="heading">
@@ -16,7 +24,7 @@ export const RecentProjects = () => {
       </h1>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
-        {projects.map(
+        {visibleProjects.map(
           ({ id, des, iconLists, img, link, sourceCode, title }) => (
             <div
               key={id}
@@ -88,6 +96,15 @@ export const RecentProjects = () => {
             </div>
           )
         )}
+      </div>
+
+      <div className="mx-auto mt-8 max-w-[640px] px-4 flex justify-center">
+        <MagicButton
+          title={showAll ? "Ver menos" : "Ver todos projetos"}
+          handleClick={() => setShowAll((v) => !v)}
+          position="right"
+          otherClasses="mx-auto"
+        />
       </div>
     </section>
   );

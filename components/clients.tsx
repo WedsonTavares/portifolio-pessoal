@@ -7,7 +7,7 @@ export const Clients = () => {
   return (
     <section className="py-20">
       <h1 className="heading mb-8">
-        Stack de  <span className="text-purple">Tecnoloagias</span>
+        Stack de  <span className="text-purple">Tecnologias</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10 space-y-10">
