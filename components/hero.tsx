@@ -28,17 +28,14 @@ export const Hero = () => {
 
       <div className="relative z-10 my-20 flex justify-center">
         <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
-          <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
-            Feito com Next.js
-          </h2>
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transformando conceitos em experiências de usuário perfeitas"
+            words="Construindo soluções escaláveis e experiências fluídas."
           />
 
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Olá, Eu sou {links.ownerName}, desenvolvedor FullStack Júnior.
+            Sou {links.ownerName}, desenvolvedor FullStack Júnior, focado em performance, usabilidade e boas práticas de desenvolvimento.
           </p>
 
           <div className="md:mt-10 flex w-full flex-col items-center gap-3 md:flex-row md:justify-center">

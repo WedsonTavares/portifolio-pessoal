@@ -7,10 +7,11 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
-import { navItems } from "@/data";
-import { cn } from "@/lib/utils";
+import { navItems, socialMedia } from "@/data";
+import { cn, withBasePath } from "@/lib/utils";
 
 type FloatingNavProps = {
   navItems: typeof navItems;
@@ -40,7 +41,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.nav
+  <motion.nav
         initial={{
           opacity: 1,
           y: -100,
@@ -68,7 +69,35 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
             <span className="!cursor-pointer text-sm">{navItem.name}</span>
           </Link>
         ))}
-      </motion.nav>
+
+        
+          </motion.nav>
+
+          {/* Social icons pinned to the top-right corner (outside the centered nav) */}
+          <motion.div
+            initial={{ opacity: 1, y: -100 }}
+            animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
+            transition={{ duration: 0.2 }}
+              className="fixed right-4 top-10 z-[5000] hidden items-center gap-2 rounded-3xl px-2 py-2 md:flex"
+          >
+            {socialMedia.map((profile) => (
+              <Link
+                key={`social-${profile.name}`}
+                href={profile.link}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex h-9 w-9 items-center justify-center rounded-md p-1"
+                title={profile.name}
+              >
+                <Image
+                  src={withBasePath(profile.img)}
+                  alt={`social-${profile.name}`}
+                  width={18}
+                  height={18}
+                />
+              </Link>
+            ))}
+          </motion.div>
     </AnimatePresence>
   );
 };

@@ -10,7 +10,7 @@ import { withBasePath } from "@/lib/utils";
 export const Footer = () => {
   return (
     <footer id="contact" className="mb-[100px] w-full pb-10 md:mb-auto">
-      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
+  <div className="absolute -bottom-40 sm:-bottom-72 left-0 min-h-48 sm:min-h-96 w-full">
         <Image
           src={withBasePath("/footer-grid.svg")}
           alt="grid"
@@ -20,7 +20,7 @@ export const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Pronto para levar <span className="text-purple">sua</span> marca digital no próximo nível?
         </h1>
@@ -64,7 +64,7 @@ export const Footer = () => {
         })()}
       </div>
 
-      <div className="relative z-[999] mt-16 flex flex-col items-center justify-between md:flex-row">
+  <div className="relative z-[999] mt-8 flex flex-col items-center justify-between md:flex-row">
         <p className="text-sm font-light md:text-base md:font-normal">
           Copyright &copy; {new Date().getFullYear()}{" "}
           <Link
@@ -88,7 +88,7 @@ export const Footer = () => {
               href={profile.link}
               target="_blank"
               rel="noreferrer noopener"
-              className="saturate-180 flex size-10 items-center justify-center rounded-lg border border-black-300 bg-black-200 bg-opacity-75 backdrop-blur-lg backdrop-filter"
+              className="saturate-180 flex size-10 items-center justify-center rounded-lg bg-black-200 bg-opacity-75 backdrop-blur-lg backdrop-filter"
               title={profile.name}
             >
               <Image

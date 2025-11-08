@@ -67,7 +67,8 @@ export const siteConfig: Metadata = {
     siteName: `${links.ownerName} Portifólio`,
     images: [
       {
-        url: new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString(),
+        // Use a separate, versioned favicon file to avoid cache issues
+        url: new URL("/favicon-v2.ico?v=1", "https://WedsonTavares.github.io/portifolio-pessoal").toString(),
         width: 1200,
         height: 630,
         alt: `${links.ownerName} — Desenvolvedor Full Stack`,
@@ -80,15 +81,15 @@ export const siteConfig: Metadata = {
     card: "summary_large_image",
     title: `${links.ownerName} — Desenvolvedor Full Stack`,
     description: "Portfólio moderno e minimalista com projetos em React, Next.js, TypeScript e mais.",
-    images: [new URL("/dev.png", "https://WedsonTavares.github.io/portifolio-pessoal").toString()],
+  images: [new URL("/favicon-v2.ico?v=1", "https://WedsonTavares.github.io/portifolio-pessoal").toString()],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/dev.png", type: "image/png" },
+      { url: "/favicon-v2.ico?v=1" },
+      { url: "/favicon-v2.ico?v=1", type: "image/ico" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/dev.png",
+    shortcut: "/favicon-v2.ico?v=1",
+    apple: "/favicon-v2.ico?v=1",
   },
   authors: {
     name: links.ownerName,
